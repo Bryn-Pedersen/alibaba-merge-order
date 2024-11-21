@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alibaba Order Management</title>
+    <link rel="stylesheet" href="styles.css">
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <div id="container">
+        <!-- sidebar -->
+        <div id="sidebar">
+            <h1>My Alibaba</h1>
+            <ul>
+                <li>Home</li>
+                <li>Message Center</li>
+                <li class="active">Orders</li>
+                <li>Transactions</li>
+                <li>Contacts</li>
+                <li>My Lists</li>
+                <li>Services</li>
+            </ul>
+        </div>
+
+     
+        <div id="main-content">
+            <header>
+                <h2>All Orders</h2>
+                <button class="btn-upgrade">Upgrade to Gold Supplier</button>
+                <button class="btn-help">Help</button>
+            </header>
+
+            <!-- orders -->
+            <div class="order-list">
+                <!-- Product 1 -->
+<div class="order-card">
+    <div class="order-header">
+        <input type="checkbox" class="merge-checkbox" data-order-id="1" 
+            data-unit-price="4.00" data-shipping-fee="22.00" data-quantity="15">
+        <p>Order No: 23537266501206709</p>
+        <p class="order-date">2019-11-25</p>
+    </div>
+    <div class="order-details">
+        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSXzSL8vKfXjHKosGw0mZR0UPbC7QWw6wtbV94s2DsQRQMKaIE7U96Xd84q2odPA8DSIkiV9gBNgdNipHEjjkDFG0Lu4DHIaeSsohsVtBPOj7EaAMi5mZvfIUTSzrPIq5UDhtJ6ytU&usqp=CAc" alt="Product">
+        <div class="product-info">
+            <p><strong>Wholesale 40oz Tumbler-2</strong></p>
+            <p>Product Amount: <b>US $4.00</b></p>
+            <p>Shipping Fee: <b>US $22.00</b></p>
+            <p>Quantity: <b><span class="quantity">15</span> </b></p>
+            <p>Total: <b>US $82.00</b></p>
+        </div>
+    </div>
+    <div class="order-actions">
+        <button class="btn btn-primary">Make Payment</button>
+        <button class="btn btn-secondary">Cancel Order</button>
+    </div>
+</div>
+
+<!-- Product 2 -->
+<div class="order-card">
+    <div class="order-header">
+        <input type="checkbox" class="merge-checkbox" data-order-id="2" 
+            data-unit-price="5.00" data-shipping-fee="15.00" data-quantity="20">
+        <p>Order No: 23537266501206710</p>
+        <p class="order-date">2019-11-25</p>
+    </div>
+    <div class="order-details">
+        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRfmf7vb21A3kvXrEUUfUVy4-GqQWm6AUf3Jr1Brle1ZQc9jthk7J-yH76RXgEe-iGd8wan1K8-s3uw8fEOkUCLCiMTLFqeq3KfrDAcxac&usqp=CAc" alt="Product">
+        <div class="product-info">
+            <p><strong>Wholesale Boba Plush</strong></p>
+            <p>Product Amount: <b>US $5.00</b></p>
+            <p>Shipping Fee: <b>US $15.00</b></p>
+            <p>Quantity: <b><span class="quantity">20</span> </b></p>
+            <p>Total: <b>US $115.00</b></p>
+        </div>
+    </div>
+    <div class="order-actions">
+        <button class="btn btn-primary">Make Payment</button>
+        <button class="btn btn-secondary">Cancel Order</button>
+    </div>
+</div>
+
+<!-- Product 3 -->
+<div class="order-card">
+    <div class="order-header">
+        <input type="checkbox" class="merge-checkbox" data-order-id="3" 
+            data-unit-price="3.00" data-shipping-fee="50.00" data-quantity="50">
+        <p>Order No: 23537266501206711</p>
+        <p class="order-date">2019-11-25</p>
+    </div>
+    <div class="order-details">
+        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRaJt05bKXELf7h_WuBt2JF9KEepvw9H5NDEvI8Toit3GHXI708CyPCVeYgQ-dCQdqrtnxP9_bU3XcYkgbawNn2EDw7Qwqx6T54x9STDCWN5Hdd3hc0nurzr9kfCQ&usqp=CAc" alt="Product">
+        <div class="product-info">
+            <p><strong>Wholesale 8oz Candle Jar with Lid</strong></p>
+            <p>Product Amount: <b>US $3.00</b></p>
+            <p>Shipping Fee: <b>US $50.00</b></p>
+            <p>Quantity: <b><span class="quantity">50</span> </b></p>
+            <p>Total: <b>US $200.00</b></p>
+        </div>
+    </div>
+    <div class="order-actions">
+        <button class="btn btn-primary">Make Payment</button>
+        <button class="btn btn-secondary">Cancel Order</button>
+    </div>
+</div>
+
+<div class="merge-actions">
+    <button id="merge-button" class="btn btn-primary">Merge Orders</button>
+</div>
+
+
+<div id="merge-modal" class="modal">
+    <div class="modal-content">
+        <span id="modal-close" class="close">&times;</span>
+        <p id="modal-message"></p>
+    </div>
+</div>
